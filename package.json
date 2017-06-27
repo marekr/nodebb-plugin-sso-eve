@@ -1,0 +1,36 @@
+{
+  "name": "nodebb-plugin-sso-eve",
+  "version": "0.1.0",
+  "description": "NodeBB EVE SSO",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marekr/nodebb-plugin-sso-eve"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "eve online",
+    "sso",
+    "single sign on",
+    "login",
+    "registration"
+  ],
+  "author": {
+    "name": "Marek Roszko",
+    "email": "mark.roszko@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marekr/nodebb-plugin-sso-eve/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "passport-oauth": "~1.0.0"
+  },
+  "nbbpm": {
+    "compatibility": "^1.0.1",
+    "index": false
+  }
+}

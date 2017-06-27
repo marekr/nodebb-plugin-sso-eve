@@ -1,0 +1,20 @@
+{
+	"id": "nodebb-plugin-sso-eve",
+	"name": "NodeBB SSO EVE Online",
+	"description": "NodeBB Plugin that uses EVE Online SSO to login and display avatars.",
+	"url": "https://github.com/marekr/nodebb-plugin-sso-eve",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:auth.init", "method": "getStrategy" },
+		{ "hook": "static:user.delete", "method": "deleteUserData" },
+		{ "hook": "filter:users.get", "method": "getUsers" },
+		{ "hook": "filter:user.listPictures", "method": "listPictures" },
+		{ "hook": "filter:user.getPicture", "method": "getPicture" },
+		{ "hook": "static:app.load", "method": "load" },
+		{ "hook": "filter:admin.header.build", "method": "addMenuItem" }
+	],	
+	"templates": "./templates",
+	"acpScripts": [
+		"static/lib/admin.js"
+	]
+}
